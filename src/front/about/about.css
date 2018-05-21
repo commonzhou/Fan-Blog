@@ -1,0 +1,159 @@
+
+/* BODY */
+/* General styling for the three sections of the body */
+section {
+  /* Layout declarations */
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  color: #EDEDED;
+  font-family: 'Poiret One', cursive;
+}
+
+/* Gradient that runs through the body */
+.gradient {
+  margin-top:-1em;
+  padding: 3em;
+  /* can be treated like a fallback */
+  background-color: #474747;;
+  /* will be "on top", if browser supports it */
+  background-image: linear-gradient(#242424, #474747,#242424);
+}
+
+/* The h2 tags are the main categories */
+h2 {
+  /* Typography declarations */
+  font-size: 3em;
+  color: #EDEDED;
+  font-family: 'Poiret One', cursive;
+}
+
+/* The h3 tags are the additional questions */
+h3 {
+  /* Typography declarations */
+  font-style: italic;
+  font-size: 2.5em;
+  color: #EDEDED;
+  font-family: 'Poiret One', cursive;
+}
+
+/* The p tags that are descendants of the section tags are the answers */
+section p {
+  /* Typography declarations */
+  font-size: 2em;
+  line-height: 1.3em;
+  color: #EDEDED;
+  font-family: 'Poiret One', cursive;
+}
+
+/* This class is included in the last p tag of each section to create more space */
+.space-maker {
+  /* Layout declarations */
+  margin-bottom: 3em;
+  color: #EDEDED;
+}
+
+/* FOOTER */
+.content-footer {
+  /* Layout declarations */
+  background: #000000;
+  padding: 10em;
+  border-bottom: 8px solid #EDEDED;
+  color: #EDEDED;
+  font-family: 'Poiret One', cursive;
+}
+
+.content-footer > p {
+  /* Layout declarations */
+  line-height: 1.3em;
+  text-align: center;
+  /* Typography declarations */
+  font-size: 2em;
+  color: #EDEDED;
+}
+
+.social {
+  /* Layout declarations */
+  text-align: center;
+  padding: 0;
+  color: #EDEDED;
+}
+
+.social > li {
+  /* Layout declarations */
+  display: inline-block;
+  line-height: 1.3em;
+  margin-right: 2em;
+  /* Typography declarations */
+  font-size: 2em;
+  color: #EDEDED;
+}
+
+a {
+  /* Typography declarations */
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+a:hover {
+  /* Layout declarations */
+  color: #262626;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.social li:last-child {
+  /* Layout declarations */
+  margin-right: 0;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 500px) {
+
+  /* BODY */
+  .gradient {
+    padding: 1em;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  section p {
+    font-size: 1.5rem;
+  }
+  
+  /* FOOTER */
+  .content-footer {
+    padding: 4em;
+  }
+  
+  .social > li {
+  /* Layout declarations */
+  display: block;
+  margin-right: 0;
+  }
+  
+  a {
+    line-height: 3em;
+  }
+  
+  .content-footer p a {
+    line-height: 0;
+  } 
+}
+
+  /* FOOTER */
+@media only screen and (max-width: 344px) {
+  .content-footer p a {
+    line-height: 3em;
+  }
+}

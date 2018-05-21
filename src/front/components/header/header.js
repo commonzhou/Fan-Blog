@@ -1,4 +1,5 @@
 import React,{ Component } from 'react'
+import { Link } from 'react-router-dom'
 import './header.css'
 class Header extends React.Component{
     constructor(props){
@@ -12,10 +13,9 @@ class Header extends React.Component{
             	</header>
                 <nav>
                     <ul>
-                        <li className="navitem"><a href="#" >主页</a></li>
-                        <li className="navitem"><a href="#" >文章</a></li>
-                        <li className="navitem"><a href="#">关于</a></li>
-                        <li className="navitem"><a href="#" >管理</a></li>
+                        <li className="navitem"><Link to="/">主页在此</Link></li>
+                        <li className="navitem"><Link to="/about">个人信息</Link></li>
+                        <li className="navitem"><Link to="/manage">后台管理</Link></li>
                     </ul>
                     <div className="menubar">Menu
 					    <span className="hamburgericon"><i className="fa fa-bars"></i></span>
