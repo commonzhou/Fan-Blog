@@ -1,0 +1,32 @@
+.section{
+  margin-top:30px;
+  margin-left:20%;
+  color: #EDEDED;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.6em;
+}
+.input{             
+    font-family: 'Poiret One', cursive;
+    font-size: 0.8em;
+    margin-top:20px;
+   
+}
+.addTag{
+    font-family: 'Poiret One', cursive;
+    font-size: 0.8em;
+    margin:10px;
+    color: #006666;
+}
+.taglist{
+    list-style: none;
+    margin-top:30px;
+    display: flex;
+}
+.tagitem{
+    display: inline-block;
+    flex:0 0 10%;
+    text-align: left;
+}
+
+
+/* 使用字体font-size一样，居然让input和button对齐了 */
